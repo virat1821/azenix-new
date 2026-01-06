@@ -1,0 +1,172 @@
+
+
+/* ===============================
+   GLOBAL BASE
+   =============================== */
+
+body {
+  position: relative;
+  z-index: 1;
+  /* background: var(--bg);
+  color: var(--dark); */
+  overflow-x: hidden;
+}
+
+/* ===============================
+   FLOATING GEOMETRIC SHAPES
+   =============================== */
+
+.geometric-shapes {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.shape {
+  position: absolute;
+  border: 1px solid rgba(61, 209, 255, 0.35);
+  animation: floatShape 20s linear infinite;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+/* SHAPE 1 — PRIMARY */
+.shape:nth-child(1) {
+  width: 100px;
+  height: 100px;
+  left: 10%;
+  animation-delay: 0s;
+  border-color: rgba(61, 209, 255, 0.45);
+}
+
+/* SHAPE 2 — SECONDARY */
+.shape:nth-child(2) {
+  width: 60px;
+  height: 60px;
+  left: 70%;
+  animation-delay: -5s;
+  border-radius: 50%;
+  border-color: rgba(255, 107, 129, 0.45);
+}
+
+/* SHAPE 3 — MUTED */
+.shape:nth-child(3) {
+  width: 80px;
+  height: 80px;
+  left: 30%;
+  animation-delay: -10s;
+  transform: rotate(45deg);
+  border-color: rgba(85, 98, 112, 0.45);
+}
+
+/* SHAPE 4 — ACCENT */
+.shape:nth-child(4) {
+  width: 120px;
+  height: 120px;
+  left: 50%;
+  animation-delay: -15s;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 231, 76, 0.18),
+    transparent
+  );
+}
+
+/* SHAPE ANIMATION */
+@keyframes floatShape {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* ===============================
+   NEURAL NETWORK LINES
+   =============================== */
+
+.neural-lines {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  pointer-events: none;
+}
+
+.neural-line {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  opacity: 0.35;
+  animation: neuralPulse 3s ease-in-out infinite;
+}
+
+/* LINE 1 — PRIMARY */
+.neural-line:nth-child(1) {
+  top: 25%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--primary),
+    transparent
+  );
+}
+
+/* LINE 2 — SECONDARY */
+.neural-line:nth-child(2) {
+  top: 50%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--secondary),
+    transparent
+  );
+  animation-delay: -1s;
+}
+
+/* LINE 3 — ACCENT */
+.neural-line:nth-child(3) {
+  top: 70%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--accent),
+    transparent
+  );
+  animation-delay: -2s;
+}
+
+/* LINE ANIMATION */
+@keyframes neuralPulse {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scaleX(0.6);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+/* ===============================
+   MOBILE OPTIMISATION
+   =============================== */
+
+@media (max-width: 768px) {
+  .shape,
+  .neural-line {
+    opacity: 0.35;
+  }
+}

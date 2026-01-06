@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Azenix Digital | Your Growth, Our Pulse</title>
+<title>Digital Marketing & Web Design Agency in Scotland | Azenix</title>
+<meta name="description"
+content="Azenix is a digital marketing & web design agency in Scotland helping businesses grow with SEO, lead generation, and high-converting websites. Serving Glasgow, Edinburgh & across Scotland.">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta name="description" content="Azenix helps small and local businesses grow online through website design, web development, SEO and digital marketing.">
@@ -11,12 +14,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-
+<link rel="stylesheet" href="./style.css">
 
 <style>
 :root{
 --bg:#F7F9FC;
 --primary:#3DD1FF;
+--primary-line:#478ff4;
 --secondary:#FF6B81;
 --accent:#FFE74C;
 --dark:#222;
@@ -28,6 +32,11 @@ font-family:'Poppins',sans-serif;
 background:var(--bg);
 color:var(--dark);
 /* padding-top:80px; */
+}
+p span {
+  color: #c9a24d; /* or your accent */
+  font-weight: 700;
+  margin-right: 6px;
 }
 
 /* NAVBAR */
@@ -49,8 +58,8 @@ padding:140px 0 100px;
 background:linear-gradient(135deg,#eaf7ff,#fff);
 }
 .hero-heading{
-font-size:3.2rem;font-weight:800;
-background:linear-gradient(90deg,#222,#3DD1FF,#FF6B81,#222);
+font-size:3rem;font-weight:800;
+background:linear-gradient(90deg,#222,#3DD1FF,#ffce46,#222);
 background-size:300%;
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
@@ -144,7 +153,7 @@ max-width:820px;margin:auto;display:flex;align-items:center;gap:20px
 .testimonial-track{display:flex;transition:.5s ease}
 .testimonial-card{
 min-width:100%;background:#fff;padding:45px 35px;
-border-radius:18px;box-shadow:0 20px 45px rgba(0,0,0,.06)
+border-radius:18px;box-shadow: 0 20px 45px rgb(0 196 255 / 54%);
 }
 .testimonial-icon{font-size:3rem;color:var(--primary)}
 .testimonial-text{color:var(--muted)}
@@ -805,7 +814,7 @@ footer{background:#fff;border-top:1px solid #eee;padding:40px 0}
   right: 12%;
   width: 220px;
   opacity: 0.25;
-  stroke: var(--primary);
+  stroke: var(--primary-line);
   stroke-width: 2;
   fill: none;
   stroke-dasharray: 6 8;
@@ -926,7 +935,7 @@ footer{background:#fff;border-top:1px solid #eee;padding:40px 0}
   width: 42px;
   height: 42px;
   border-radius: 14px;
-  background: rgba(61,209,255,0.12);
+ background: rgb(61 209 255);
   display: grid;
   place-items: center;
   transition: .35s;
@@ -991,6 +1000,23 @@ footer{background:#fff;border-top:1px solid #eee;padding:40px 0}
 
 <body>
 
+ <!-- Floating Geometric Shapes -->
+    <div class="geometric-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- Neural Network Lines -->
+    <div class="neural-lines">
+        <div class="neural-line"></div>
+        <div class="neural-line"></div>
+        <div class="neural-line"></div>
+    </div>
+
+
+
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg fixed-top">
 <div class="container">
@@ -1016,9 +1042,17 @@ footer{background:#fff;border-top:1px solid #eee;padding:40px 0}
 <div class="container">
 <div class="row align-items-center">
 <div class="col-lg-6">
-<h1 class="hero-heading">AZENIX DIGITAL</h1>
+<h2 class="hero-heading">AZENIX DIGITAL</h2>
 <h5 class="fw-bold mt-3">Your Growth, Our Pulse</h5>
-<p>Helping small businesses grow online with simple, effective digital strategies.</p>
+<h1>
+Digital Marketing & Web Design Agency in Scotland
+</h1>
+
+<p class="mt-1">
+Azenix helps Scottish businesses grow online with SEO-driven digital marketing,
+conversion-focused web design, and powerful lead generation strategies.
+</p>
+
 <a href="#contact" class="btn btn-warning fw-bold mt-3">Start Your Growth</a>
 </div>
 <div class="col-lg-6 mt-5 mt-lg-0">
@@ -1047,12 +1081,22 @@ footer{background:#fff;border-top:1px solid #eee;padding:40px 0}
 
   <div class="container">
     <div class="text-center mb-5">
-      <h2 class="section-title doodle-title">
+      <h2 class="section-title doodle-title mb-3">
         Why Choose <span>Azenix</span>
       </h2>
-      <p class="section-subtitle">
+      <!-- <p class="section-subtitle">
         Smart ideas, clean technology, and real business growth
-      </p>
+      </p> -->
+
+     <p class="section-subtitle">
+<span>✔</span> At Azenix, we specialise in <strong>Scotland-focused digital marketing strategies</strong> that help businesses reach the right audience and generate meaningful growth. <br><br>
+<span>✔</span> We build <strong>SEO-optimised, high-performance websites</strong> designed to load fast, rank well, and convert visitors into customers. <br><br>
+<span>✔</span> Our approach is driven by <strong>proven lead generation methods</strong> that consistently deliver high-quality enquiries — not just traffic. <br><br>
+<span>✔</span> We believe in <strong>transparent pricing and honest advice</strong>, so you always know exactly what you’re investing in and why. <br><br>
+<span>✔</span> Most importantly, we focus on <strong>long-term growth</strong>, creating digital solutions that continue to perform long after launch — without quick fixes or empty promises.
+</p>
+
+
     </div>
 
     <div class="row g-4 doodle-grid">
@@ -1130,13 +1174,15 @@ footer{background:#fff;border-top:1px solid #eee;padding:40px 0}
 
     <!-- HEADER -->
     <div class="text-center mb-5">
-      <h2 class="section-title" data-aos="fade-up">Our Solutions</h2>
+    
+      <h2 class="section-title doodle-title mb-3">
+         Our Digital Solutions for <span>Scottish Businesses</span>
+      </h2>
       <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
-        Smart digital services designed to scale your business
+        Practical digital services designed to help businesses across Scotland grow,
+        compete, and convert online.
       </p>
     </div>
-
-  
 
     <!-- GRID -->
     <div class="row g-4 solution-grid">
@@ -1146,7 +1192,6 @@ footer{background:#fff;border-top:1px solid #eee;padding:40px 0}
         <div class="solution-card">
           <span class="featured-badge">Featured</span>
 
-          <!-- SVG ICON -->
           <div class="solution-icon">
             <svg viewBox="0 0 24 24" class="icon-animate">
               <rect x="3" y="4" width="18" height="14" rx="2"/>
@@ -1156,17 +1201,18 @@ footer{background:#fff;border-top:1px solid #eee;padding:40px 0}
 
           <h5>Website Design</h5>
           <p>
-            High-impact, mobile-first website designs that build trust
-            and convert visitors into customers.
+            We design modern, mobile-first websites that help Scottish businesses build
+            trust, stand out online, and turn visitors into real enquiries. Every site
+            is crafted for performance, clarity, and conversions.
           </p>
 
-          <a href="services/website-design.html" class="solution-link">
-            Learn More <span>→</span>
+          <a href="./services/web-design-scotland.html" class="solution-link">
+             <span>Learn More →</span>
           </a>
         </div>
       </div>
 
-      <!-- WEB -->
+      <!-- WEB DEVELOPMENT -->
       <div class="col-md-6 col-lg-4 solution-item web">
         <div class="solution-card">
           <div class="solution-icon">
@@ -1176,18 +1222,21 @@ footer{background:#fff;border-top:1px solid #eee;padding:40px 0}
               <path d="M12 3a15 15 0 0 1 0 18"/>
             </svg>
           </div>
+
           <h5>Web Development</h5>
           <p>
-            Fast, secure, and scalable web applications built with
-            modern technologies.
+            From fast business websites to custom web applications, we build secure,
+            scalable solutions using modern technologies — designed to grow with your
+            business across Scotland and beyond.
           </p>
-          <a href="services/web-development.html" class="solution-link">
-            Learn More <span>→</span>
+
+          <a href="./services/web-development-scotland.htm" class="solution-link">
+             <span>Learn More →</span>
           </a>
         </div>
       </div>
 
-      <!-- MARKETING -->
+      <!-- SEO -->
       <div class="col-md-6 col-lg-4 solution-item marketing">
         <div class="solution-card">
           <div class="solution-icon">
@@ -1196,18 +1245,21 @@ footer{background:#fff;border-top:1px solid #eee;padding:40px 0}
               <circle cx="9" cy="12" r="1"/>
             </svg>
           </div>
-          <h5>SEO Optimization</h5>
+
+          <h5>SEO Optimisation</h5>
           <p>
-            Ethical SEO strategies that improve rankings,
-            visibility, and long-term traffic.
+            Our ethical SEO strategies help businesses in Glasgow, Edinburgh, and across
+            Scotland improve search rankings, attract the right audience, and generate
+            consistent long-term organic traffic.
           </p>
-          <a href="services/seo.html" class="solution-link">
-            Learn More <span>→</span>
+
+          <a href="./services/seo-services-scotland.html" class="solution-link">
+            <span>Learn More →</span>
           </a>
         </div>
       </div>
 
-      <!-- MARKETING -->
+      <!-- DIGITAL MARKETING -->
       <div class="col-md-6 col-lg-4 solution-item marketing">
         <div class="solution-card">
           <div class="solution-icon">
@@ -1216,18 +1268,21 @@ footer{background:#fff;border-top:1px solid #eee;padding:40px 0}
               <path d="M12 14v6"/>
             </svg>
           </div>
+
           <h5>Digital Marketing</h5>
           <p>
-            Performance-driven campaigns across Google
-            and social platforms.
+            We deliver performance-driven digital marketing campaigns across Google and
+            social platforms, helping Scottish businesses reach local customers and
+            achieve measurable growth.
           </p>
-          <a href="services/digital-marketing.html" class="solution-link">
-            Learn More <span>→</span>
+
+          <a href="./services/digital-marketing-scotland.html" class="solution-link">
+            <span>Learn More →</span>
           </a>
         </div>
       </div>
 
-      <!-- GROWTH -->
+      <!-- LEAD GENERATION -->
       <div class="col-md-6 col-lg-4 solution-item growth">
         <div class="solution-card">
           <div class="solution-icon">
@@ -1237,18 +1292,21 @@ footer{background:#fff;border-top:1px solid #eee;padding:40px 0}
               <path d="M16 20v-6"/>
             </svg>
           </div>
+
           <h5>Lead Generation</h5>
           <p>
-            Conversion-focused funnels that maximise enquiries
-            and ROI.
+            We create conversion-focused funnels that turn website visitors into
+            high-quality leads, helping businesses across Scotland maximise enquiries
+            and return on investment.
           </p>
-          <a href="services/lead-generation.html" class="solution-link">
-            Learn More <span>→</span>
+
+          <a href="./services/lead-generation-scotland.html" class="solution-link">
+            <span>Learn More →</span>
           </a>
         </div>
       </div>
 
-      <!-- GROWTH -->
+      <!-- BRAND PRESENCE -->
       <div class="col-md-6 col-lg-4 solution-item growth">
         <div class="solution-card">
           <div class="solution-icon">
@@ -1256,13 +1314,16 @@ footer{background:#fff;border-top:1px solid #eee;padding:40px 0}
               <path d="M12 2l4 8 8 4-8 4-4 8-4-8-8-4 8-4z"/>
             </svg>
           </div>
+
           <h5>Brand Presence</h5>
           <p>
-            Build a strong, consistent digital identity
-            across all platforms.
+            We help businesses build a strong, consistent digital identity that reflects
+            who they are — improving recognition, credibility, and trust across all
+            online platforms.
           </p>
-          <a href="services/brand-presence.html" class="solution-link">
-            Learn More <span>→</span>
+
+          <a href="./services/brand-presence-scotland.html" class="solution-link">
+            <span>Learn More →</span>
           </a>
         </div>
       </div>
@@ -1409,7 +1470,9 @@ footer{background:#fff;border-top:1px solid #eee;padding:40px 0}
 <!-- TESTIMONIALS -->
 <section id="testimonials">
 <div class="container text-center">
-<h2 class="section-title">What Our Clients Say</h2>
+<h2 class="section-title doodle-title mb-3">
+        What Our <span>Clients Say</span>
+      </h2>
 <div class="testimonial-wrapper mt-5">
 <button class="testimonial-btn prev">&#10094;</button>
 <div class="testimonial-slider">
